@@ -1,0 +1,52 @@
+/* NAV */
+.logo {
+    position: absolute;
+    left: 60px; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    z-index: 1; /* Ensure the logo is above other content */
+   
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url('images/bgnav.jpg');
+    min-height: 100px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    right: 0; /* Align to the right */
+}
+
+/* The navbar */
+.topnav {
+    overflow: hidden;
+    float: right; 
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    padding-right: 200px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topnav a:hover {
+    color: #C60074;
+}
