@@ -72,3 +72,7 @@ h1{
 .btn btn-primary btn-lg {
     margin-left: 60px;
 }
+.fpage {
+    background-color: black;
+    color: white;
+}
