@@ -10,18 +10,14 @@
 .bg-img {
  
     background-image: url('images/bgnav.jpg');
-    min-height: 100px;
-
-   
+    min-height: 100px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* Needed to position the navbar */
     position: relative;
 }
 
-/* Position the navbar container inside the image */
+
 .container {
     position: absolute;
     margin: 20px;
@@ -33,6 +29,8 @@
 .topnav {
     overflow: hidden;
     float: right; 
+    margin: 0;
+    padding-right: 150px;
 }
 
 /* Navbar links */
@@ -40,8 +38,7 @@
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    padding-right: 200px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -59,20 +56,96 @@ h1{
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
+   
+}
+h2{
+    color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
     margin-left: 60px;
+}
+h3{
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 60px; 
 }
 .designer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-    margin: 20px auto;
+    width: 700px;
+    padding-left: 150px;
+    
 }
-
+/* Botton */
 .btn btn-primary btn-lg {
-    margin-left: 60px;
+    
 }
 .fpage {
     background-color: black;
     color: white;
 }
+
+.myphoto{
+    position: relative;
+    max-height: 300px;
+   
+}
+
+.paragraph{
+    align-items: center;
+    padding-left: 100px;
+    max-width: 700px;
+}
+ 
+.title1{
+    width: 600px;
+}
+.section1 {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.section2 {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 400px;
+}
+.path {
+    margin: 200px;
+}
+
+.btn-contact {
+    margin-top: 40px;
+}
+.sectionabout {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* PORTFOLIO PAGE*/
+
+.sitesimg{
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 100px;
+}
+
