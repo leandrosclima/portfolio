@@ -1,10 +1,9 @@
 /* NAV */
-.logo {
-    position: absolute;
-    left: 60px; 
-    top: 20px; 
-    z-index: 1; 
-   
+.topnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bg-img {
@@ -17,25 +16,8 @@
     position: relative;
 }
 
-
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-    right: 0; 
-}
-
-/* The navbar */
-.topnav {
-    overflow: hidden;
-    float: right; 
-    margin: 0;
-    padding-right: 150px;
-}
-
 /* Navbar links */
 .topnav a {
-    float: left;
     color: white;
     text-align: center;
     padding: 14px 20px;
@@ -51,6 +33,7 @@
 body {
     background-color: #DEDEDE;
 }
+
 h1{
     color: #C60074;
     font-size: 50px;
@@ -58,6 +41,7 @@ h1{
     text-align: left;
    
 }
+
 h2{
     color: black;
     font-size: 50px;
@@ -65,6 +49,7 @@ h2{
     text-align: left;
     margin-left: 60px;
 }
+
 h3{
     color: black;
     font-size: 30px;
@@ -72,6 +57,7 @@ h3{
     text-align: left;
     margin-left: 60px; 
 }
+
 .designer {
     width: 700px;
     padding-left: 150px;
@@ -149,3 +135,38 @@ h3{
     padding-top: 100px;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+        position: fixed; /* Fix the navbar to the top */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Ensure navbar is above other content */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px; /* Adjust as needed */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .section1 {
+        padding-top: 150px; /* Adjust as needed */
+    }
+
+    .section2 {
+        padding-bottom: 200px; /* Adjust as needed */
+    }
