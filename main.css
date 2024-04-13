@@ -1,5 +1,5 @@
 /* NAV */
-.topnav{
+.topnav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,9 +7,9 @@
 }
 
 .bg-img {
- 
+
     background-image: url('images/bgnav.jpg');
-    min-height: 100px; 
+    min-height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,15 +34,15 @@ body {
     background-color: #DEDEDE;
 }
 
-h1{
+h1 {
     color: #C60074;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
-   
+
 }
 
-h2{
+h2 {
     color: black;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -50,43 +50,64 @@ h2{
     margin-left: 60px;
 }
 
-h3{
+h3 {
     color: black;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
-    margin-left: 60px; 
+    margin-left: 60px;
 }
 
 .designer {
-    width: 700px;
+    max-width: 700px;
     padding-left: 150px;
-    
+
+}
+.tittle1 {
+    max-width: 600px;
 }
 /* Botton */
-.btn btn-primary btn-lg {
-    
-}
+.btn btn-primary btn-lg {}
+
+/* FOOTER */
 .fpage {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
-.myphoto{
+.socialmedia {
+    display: flex;
+    align-items: center;
+}
+
+.socialmedia a {
+    margin-right: 10px;
+
+}
+
+.copyright {
+    margin: 0;
+
+}
+
+.myphoto {
     position: relative;
     max-height: 300px;
-   
+
 }
 
-.paragraph{
+.paragraph {
     align-items: center;
     padding-left: 100px;
+    padding-right: 100px;
     max-width: 700px;
 }
- 
-.title1{
-    width: 600px;
-}
+
+
 .section1 {
     display: flex;
     align-content: stretch;
@@ -95,6 +116,7 @@ h3{
     flex-wrap: nowrap;
     justify-content: center;
     padding-top: 100px;
+    
 }
 
 .section2 {
@@ -104,15 +126,18 @@ h3{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding-bottom: 400px;
+    padding-bottom: 100px;
+   
 }
+
 .path {
-    margin: 200px;
+    margin: 100px;
 }
 
 .btn-contact {
     margin-top: 40px;
 }
+
 .sectionabout {
     display: flex;
     align-content: stretch;
@@ -125,7 +150,7 @@ h3{
 
 /* PORTFOLIO PAGE*/
 
-.sitesimg{
+.sitesimg {
     display: flex;
     align-content: stretch;
     align-items: center;
@@ -138,20 +163,21 @@ h3{
 
 
 @media only screen and (max-width: 768px) {
+
     /* Navbar adjustments */
     .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
-        position: fixed; /* Fix the navbar to the top */
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1000; /* Ensure navbar is above other content */
+        z-index: 1000;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 50px; /* Adjust as needed */
+        padding-top: 50px;
     }
 
     .navbar-nav {
@@ -163,10 +189,68 @@ h3{
         margin: 10px 0;
     }
 
+    /* INDEX ADJUSTMENTS */
     .section1 {
-        padding-top: 150px; /* Adjust as needed */
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .section2 {
-        padding-bottom: 200px; /* Adjust as needed */
+        flex-direction: column;
+        padding-bottom: 200px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* ABOUT PAGE */
+    .sectionabout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .myphoto {
+        max-height: 300px;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paragraph {
+        text-align: justify;
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 200px;
+
+    }
+    .tittle1 {
+        text-align: center;
+        
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .designer {
+        width: 350px;
+        align-self: center;
+        padding-left: 0;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+    .paragraph {
+        padding-right: 50px;
+        padding-left: 50px;
     }
